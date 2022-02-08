@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+main {
+  padding: 25px;
+}
+
+aside {
+  background-color: whitesmoke;
+  padding: 25px;
+}
+
+.week-calendar {
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+  margin: 1em 0;
+  width: 100%;
+
+  td, th {
+    border: 1px solid lightgray;
+    padding: 8px;
+  }
+}
+
+.calendar-item {
+  border: 1px solid lightgray;
+  padding: 4px;
+
+  &--ordinary { background-color: lightblue }
+  &--quiz { background-color: lightyellow }
+  &--spelling-test { background-color: lightgreen }
+}

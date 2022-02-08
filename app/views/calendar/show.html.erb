@@ -1,0 +1,29 @@
+<main>
+  <h2>Week Calendar</h2>
+
+  <table class="week-calendar">
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td><%= render 'item', homework: Homework.first %></td>
+      <td><%= render 'item', homework: Homework.second %></td>
+      <td><%= render 'item', homework: Homework.third %></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</main>
+
+<aside>
+  <label for="items-sorting">Sort:</label>
+  <select id="items-sorting">
+    <option value="">Select...</option>
+    <option value="alpha">Alphabetically</option>
+    <option value="type">Task Type</option>
+  </select>
+</aside>
